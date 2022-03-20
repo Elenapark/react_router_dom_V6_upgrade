@@ -1,13 +1,13 @@
 import React from 'react';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 
 const Home = (props) => {
-    const history = useHistory();
+    const navigate = useNavigate();
     return (
     <>
         <h1>home</h1>
         <button onClick={() => {
-            history.push("/profile")
+            navigate("/profile")
         }}>Go to Profile</button>
     
     </>)
